@@ -7,7 +7,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
-import CategoryIcon from '../detailicon';
+import CategoryIcon from '../screens/categoryScreen/categoryIcon';
 import HomeScreen from "../screens/homeScreen"
 import WeatherScreen from '../screens/weatherScreen';
 import CurrencyScreen from '../screens/currencyScreen';

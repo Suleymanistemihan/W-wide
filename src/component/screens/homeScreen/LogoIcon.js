@@ -6,11 +6,17 @@ function HomeIcon(props) {
   const navigation = useNavigation()
   return (
     <View style={{ justifyContent: "center", alignItems: "center", flexDirection: "row", height: 50, width: 100, }}>
-      <Image source={require('../../icon/logo/logo.png')} style={{ width: 30, height: 30 }} />
-      <Text style={{ fontSize: 15, fontWeight: "bold", marginLeft: 5 }}>
-        W-wide
-      </Text>
-    </View>
+      <TouchableOpacity
+        onPress={() => navigation.navigate("Home")}>
+        <Image source={require('../../icon/logo/logo.png')} style={{ width: 30, height: 30 }} />
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => navigation.navigate("Home")}>
+        <Text style={{ fontSize: 15, fontWeight: "bold", marginLeft: 5 }}>
+          W-wide
+        </Text>
+      </TouchableOpacity>
+    </View >
   )
 }
 

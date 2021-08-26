@@ -3,11 +3,12 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 
+
 import MainStackNavigator from './src/component/navigator/AppNavigator';
 
 
 export default function App() {
   return (
-    <MainStackNavigator />
+      <MainStackNavigator />
   )
 }

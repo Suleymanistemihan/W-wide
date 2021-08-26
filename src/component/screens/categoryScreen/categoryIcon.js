@@ -8,7 +8,7 @@ function CategoryIcon(props) {
   const navigation = useNavigation()
   return (
     <View style={{ justifyContent: "center", alignItems: "center", flexDirection: "row", height: 50, width: 100, }}>
-      <Text style={{ fontSize: 15, fontWeight: "bold", marginRight: 5, }}>
+      <Text style={{ fontSize: 15, fontWeight: "bold", marginRight: 5, height: 25 }}>
         Category
       </Text>
       <TouchableOpacity

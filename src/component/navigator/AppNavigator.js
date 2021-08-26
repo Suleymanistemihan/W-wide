@@ -4,8 +4,9 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import CategoryIcon from '../screens/categoryScreen/categoryIcon';
 import HomeScreen from "../screens/homeScreen"
@@ -13,9 +14,8 @@ import WeatherScreen from '../screens/weatherScreen';
 import CurrencyScreen from '../screens/currencyScreen';
 import ConventerScreen from '../screens/conventerScreen';
 import CategorySCreen from '../screens/categoryScreen';
-
+import HomeIcon from '../screens/homeScreen/LogoIcon';
 const Stack = createStackNavigator()
-
 function MainStackNavigator() {
   return (
     <NavigationContainer>
@@ -23,10 +23,10 @@ function MainStackNavigator() {
         screenOptions={{
           gestureEnabled: true,
           gestureDirection: "horizontal",
-          ...TransitionPresets.FadeFromBottomAndroid
+          ...TransitionPresets.ModalPresentationIOS
         }}>
-        <Stack.Screen name='W-wide' component={BottomTabNavigator}
-          options={{ headerRight: props => <CategoryIcon {...props} /> }} />
+        <Stack.Screen name=' ' component={BottomTabNavigator}
+          options={{ headerRight: props => <CategoryIcon {...props} />, headerLeft: props => <HomeIcon {...props} /> }} />
         <Stack.Screen name="Category" component={CategorySCreen} />
       </Stack.Navigator>
     </NavigationContainer>
@@ -34,7 +34,6 @@ function MainStackNavigator() {
 }
 
 const BottomTab = createMaterialBottomTabNavigator()
-
 function BottomTabNavigator() {
   return (
     <BottomTab.Navigator>
@@ -69,6 +68,7 @@ function BottomTabNavigator() {
     </BottomTab.Navigator>
   )
 }
+
 export default MainStackNavigator;
 
 

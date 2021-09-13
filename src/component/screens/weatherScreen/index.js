@@ -21,7 +21,7 @@ function WeatherScreen() {
         <View style={{ alignItems: "center", borderWidth: 2, height: "10%", alignItems: "center", borderRadius: 10, backgroundColor: "#18181b99", borderColor: "#18181b99", justifyContent: "center", width: "70%" }}>
           <View style={{ flexDirection: "row" }}>
             <Text style={{ fontSize: 30, color: "white", fontWeight: "bold" }}>{state?.location?.region}</Text>
-            <Text style={{ fontSize: 30, color: "white", fontWeight: "bold" }}>/{state?.location.country}</Text>
+            <Text style={{ fontSize: 30, color: "white", fontWeight: "bold" }}>/{state?.location?.country}</Text>
           </View>
         </View>
         <View style={{ width: "80%", height: "70%", alignItems: "center", justifyContent: "center", }}>

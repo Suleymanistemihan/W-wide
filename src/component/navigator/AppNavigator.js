@@ -8,13 +8,15 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import CategoryIcon from '../screens/categoryScreen/categoryIcon';
 import HomeScreen from "../screens/homeScreen"
 import WeatherScreen from '../screens/weatherScreen';
 import CurrencyScreen from '../screens/currencyScreen';
 import ConventerScreen from '../screens/conventerScreen';
 import CategorySCreen from '../screens/categoryScreen';
 import HomeIcon from '../screens/homeScreen/LogoIcon';
+import DetailSCreen from '../screens/homeScreen/detailScreen';
+
+
 const Stack = createStackNavigator()
 function MainStackNavigator() {
   return (
@@ -26,8 +28,11 @@ function MainStackNavigator() {
           ...TransitionPresets.ModalPresentationIOS
         }}>
         <Stack.Screen name=' ' component={BottomTabNavigator}
-          options={{ headerRight: props => <CategoryIcon {...props} />, headerLeft: props => <HomeIcon {...props} /> }} />
-        <Stack.Screen name="Category" component={CategorySCreen} />
+          options={{ headerLeft: props => <HomeIcon {...props} /> }} />
+        <Stack.Screen name="DetailScreen" component={DetailSCreen}
+          options={{
+            title: "News Detail"
+          }} />
       </Stack.Navigator>
     </NavigationContainer>
   )

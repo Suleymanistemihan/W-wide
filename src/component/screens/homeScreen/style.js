@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   sliderImage: {
     width: "100%",
     height: "50%",
-    marginBottom: 5,
+    marginBottom: 4,
     borderTopRightRadius: 10,
     borderTopLeftRadius: 10
   },

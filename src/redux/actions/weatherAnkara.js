@@ -5,7 +5,7 @@ const fetchDataPending = () => ({
   type: DATA_PENDING,
 })
 
-const weatherFetchIstanbul = data => ({
+const weatherFetchAnkara = data => ({
   type: WEATHER_DATA,
   data,
 })
@@ -16,10 +16,10 @@ const rejected = error => ({
 })
 
 
-export const fetchWeatherIstanbul = () => dispatch => {
+export const fetchWeatherAnkara = () => dispatch => {
   fetchDataPending()
-  axios.get("http://api.weatherapi.com/v1/current.json?key=e3361b603e234f468e3121754211209&q=ISTANBUL&aqi=no")
+  axios.get("http://api.weatherapi.com/v1/current.json?key=e3361b603e234f468e3121754211209&q=ANKARA&aqi=no")
     .then((response) => {
-      dispatch(weatherFetchIstanbul(response.data))
+      dispatch(weatherFetchAnkara(response.data))
     })
 }

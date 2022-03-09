@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     height: "100%",
-    alignItems: "center"
+    alignItems: "center",
+    backgroundColor: "#E3E5E4"
   },
   sliderCont: {
     width: "100%",
@@ -15,25 +16,31 @@ const styles = StyleSheet.create({
   Header: {
     marginVertical: 10,
     fontWeight: "bold",
-    fontSize: 16,
+    fontSize: 25,
     color: "#2c2d2e",
-    textAlign: "center"
+    textAlign: "center",
+    height: 50,
+    width: "50%",
+    alignSelf: "center",
+    textDecorationLine: "underline",
   },
   sliderTouch: {
-    backgroundColor: "#e8e8e8",
+    backgroundColor: "#B5B8B7",
     width: 200,
     height: "100%",
     marginHorizontal: 10,
     alignItems: "center",
-    borderRadius: 5,
-    borderBottomWidth: 5,
-    borderColor: "#bfbfbf"
+    borderRadius: 10,
+    borderBottomWidth: 10,
+    borderColor: "#66645E"
 
   },
   sliderImage: {
     width: "100%",
     height: "50%",
     marginBottom: 5,
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10
   },
   sliderText: {
     color: "#2c2d2e",
@@ -56,21 +63,26 @@ const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "row",
     marginVertical: "3%",
-    borderRadius: 5,
+    borderRadius: 15,
     borderRightWidth: 5,
-    borderColor: "#bfbfbf",
-    backgroundColor: "#e8e8e8",
+    borderColor: "#66645E",
+    backgroundColor: "#B5B8B7",
+    borderBottomWidth: 3,
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10
   },
   previousImageCont: {
     width: "100%",
     height: 135,
     flexDirection: "row",
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10
   },
   previousImage: {
     width: "50%",
     height: "100%",
-    borderTopLeftRadius: 5,
-    borderBottomLeftRadius: 5
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10
   },
   previousDetailCont: {
     width: "50%",

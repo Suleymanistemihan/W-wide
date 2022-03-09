@@ -1,5 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { View, Text } from 'react-native'
+import { useSelector, useDispatch } from "react-redux";
+import { currencyFetchData } from "../../../redux/actions/CurrencyData";
+
+
 
 function CurrencyScreen() {
   return (

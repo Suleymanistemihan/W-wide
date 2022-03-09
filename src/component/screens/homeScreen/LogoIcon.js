@@ -2,6 +2,8 @@ import React from 'react'
 import { Image, Text, TouchableOpacity, View } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
+import Svg, { Circle, Rect, Path } from "react-native-svg"
+
 function HomeIcon(props) {
   const navigation = useNavigation()
   return (

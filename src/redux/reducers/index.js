@@ -1,9 +1,10 @@
 import { combineReducers } from "redux";
-import { news, weather } from "./state"
+import { news, weather, currency } from "./state"
 
 const rootReducer = combineReducers({
   news,
   weather,
+  currency,
 });
 
 
